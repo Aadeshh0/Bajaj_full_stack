@@ -109,7 +109,7 @@ function App() {
       if (!parsedInput.data || !Array.isArray(parsedInput.data)) {
         throw new Error("Invalid input format");
       }
-      const res = await axios.post(" https://bajaj-full-stack-81a3.vercel.app/ ", parsedInput);
+      const res = await axios.post(" https://bajaj-full-stack-81a3.vercel.app/bfhl ", parsedInput);
       setResponse(res.data);
     } catch (err) {
       setError(err.message);
